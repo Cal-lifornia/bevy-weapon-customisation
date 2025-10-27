@@ -10,8 +10,8 @@ bevy_panorbit_camera = { version = "0.31" }
 [features]
 gizmos = []
 
-[target.'cfg(target_os="linux")'.features]
-default = ["bevy/wayland"]
+[target.'cfg(target_os="linux")'.dependencies.bevy]
+features = ["wayland"]
 
 # Enable a small amount of optimization in the dev profile.
 [profile.dev]
